@@ -30,6 +30,8 @@ const questions = async () => {
 }
 // TODO: Create a function to write README file
 const generateHTML = ({ name, id, email }) =>
+// Function call to initialize app
+ init();
 
 // TODO: Create a function to initialize app
 function init() {
@@ -43,9 +45,6 @@ function init() {
 .catch((err) => console.error(err));
   };
   
-// Function call to initialize app
-init();
-
 
 
 
