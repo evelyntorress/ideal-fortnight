@@ -8,9 +8,9 @@ const fs = require("fs");
 // const Engineer = require("./lib/engineer");
 // const Intern = require("./lib/intern");
 
-const questions = () => {
+const questions = async () => {
 
-inquirer.prompt([
+    return await inquirer.prompt([
     {
       type: 'input',
       name: 'name',
@@ -28,7 +28,8 @@ inquirer.prompt([
     },
   ])
 }
-
+// TODO: Create a function to write README file
+const generateHTML = ({ name, id, email }) =>
 
 // TODO: Create a function to initialize app
 function init() {
