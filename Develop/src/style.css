@@ -1,0 +1,33 @@
+.container-jumbotron{
+    padding: 20px; 
+}
+
+
+.jumbotron {
+    background-color: #3A5BA0; 
+}
+.jumbotron-fluid{
+    background-color: #3A5BA0; 
+}
+
+.header {
+    background-color: #FFA500;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:900;
+    color: bisque;
+    text-align: center;
+ }
+
+h3 {
+    background-color:#FFE5B4;   
+}
+.card-body{
+    background-color:#FFE5B4;  
+}
+
+.card-deck {
+    padding: 50px 100px;
+}

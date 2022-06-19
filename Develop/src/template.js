@@ -10,7 +10,7 @@ const generateHTML = ({ name, id, email }) =>
   <title>Document</title>
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid"> 
   <div class="container">
     <h1 class="display-4">${name}</h1>
     <p class="lead">ID: ${id}</p>

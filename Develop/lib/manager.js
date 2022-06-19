@@ -1,4 +1,5 @@
-const Employee = require('./employee.js');
+// Importing the parent employee
+const Employee = require('./Employee.js');
 
 class Manager extends Employee {
     constructor(name, id, email, officeNumber) {        
@@ -6,20 +7,8 @@ class Manager extends Employee {
      this.officeNumber = officeNumber;
     }
 
- getName() {
-  return this.name;
- }
-
- getId(){
-  return this.id;
- }
-
- getEmail(){
-  return this.email;
- }
-
  getofficeNumber(){
-  return this.officenumber;
+  return this.officeNumber;
     }
 
  getRole(){
