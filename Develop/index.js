@@ -46,7 +46,7 @@ const questionsManager = () => {
   ]);
 };
 
-const generateHTML = ({ name, id, email, officeNumber, role, github, school }) =>
+const generateHTML = ({ name, id, email, officeNumber, role}) =>
   `<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -67,7 +67,7 @@ const generateHTML = ({ name, id, email, officeNumber, role, github, school }) =
    </div>
   </div>
   </div>
-      <div class="card-deck">
+  <div class="card-container">
           <div class="card" style="width: 18rem;">
               <div class="card-body">
               <!--Manager info-->
@@ -79,32 +79,8 @@ const generateHTML = ({ name, id, email, officeNumber, role, github, school }) =
                 <li class="list-group-item">Email: ${email}</li>
                 <li class="list-group-item">Office number: ${officeNumber}</li>
               </ul>
-          </div>
-          <div class="card" style="width: 18rem;">
-              <div class="card-body">
-              <!--Engineer info-->
-              <h3 class="card-title">${name}</h3>
-              <h3 class="card-title">${role}</h3>
-              </div>
-              <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${id}</li>
-              <li class="list-group-item">Email: ${email}</li>
-              <li class="list-group-item">Github username: ${github}</li>
-              </ul>
-          </div>
-          <div class="card" style="width: 18rem;">
-              <div class="card-body">
-              <!--Intern info-->
-              <h3 class="card-title">${name}</h3>
-              <h3 class="card-title">${role}</h3>
-              </div>
-              <ul class="list-group list-group-flush">
-              <li class="list-group-item">ID: ${id}</li>
-              <li class="list-group-item">Email: ${email}</li>
-              <li class="list-group-item">School: ${school}</li>
-              </ul>
-          </div>
-      </div>     
+          </div>   
+        </div>        
   </body>
   </html>`;
 
@@ -113,7 +89,6 @@ function init() {
     console.log('questionsManager')
     questionsManager()
 
-
 // Use writeFileSync method to use promises instead of a callback function
     .then((answers) => fs.writeFileSync('index.html', generateHTML(answers)))
     .then(() => console.log('Successfully wrote to index.html'))
@@ -121,3 +96,4 @@ function init() {
   };
   
   init();
+
