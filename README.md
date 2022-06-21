@@ -51,6 +51,6 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 
 ### Walkthrough Video:
 
-!Clicking [this link](https://loom.com/share/61a346a42f814eeb93a88da43090677e) you will find the video.
+Clicking [this link](https://loom.com/share/61a346a42f814eeb93a88da43090677e) you will find the video.
 
 
