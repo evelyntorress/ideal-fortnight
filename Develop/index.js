@@ -97,3 +97,23 @@ function init() {
   
   init();
 
+
+
+  // new
+
+
+  var cardDeckEl = document.getElementById('card-deck');
+// displaying the values in the 5 cards
+let otherCards = `<div class="card border-primary mb-3" style="max-width: 18rem;">
+<div class="card-header">${cityName.value}</div><img src="${iconUrl}" width= "50px" alt="icon">
+<div class="card-body text-primary">
+  <p class="card-text">Temperature: ${forecast.temp.day}ºC</p>
+  <p class="card-text">Humidity: ${forecast.humidity} %</p>
+  <p class="card-text">UV Index: ${forecast.uvi}</p>
+</div>
+</div>`
+
+console.log(cardDeckEl);
+cardDeckEl.innerHTML += otherCards;
+
+}
